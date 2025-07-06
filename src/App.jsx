@@ -7,6 +7,8 @@ function App() {
   const [fileData, setFileData] = useState(initialData);
 
   // React requires state updates to be immutable. This function creates a completely new object structure rather than mutating the existing one.
+
+  //This is implementing a Depth-First Search (DFS) with Pre-order traversal.
   const handleUpdateData = (parentId, newItem) => {
     const updateItems = (items) => {
       return items.map((item) => {
