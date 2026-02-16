@@ -1,0 +1,19 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px
+}
+
+.input-field {
+    width: 268px;
+    height: 30px;
+}
+
+.list-data {
+    border: 1px solid black;
+    width: 268px;
+    margin-top: -10px;
+    max-height: 500px;
+    overflow: auto;
+}
