@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 //import TrafficLight from "./components/Traffic-Light";
 import Explorer from "./components/Explorer";
 import { data as initialData } from "./constants/data";
@@ -9,9 +9,21 @@ import InfiniteScroll from "./components/infinite-scroll/infinite-scroll.jsx";
 import InfiniteScrollPractice from "./components/infinite-scroll/infinite-scroll-practice.jsx";
 import AutoComplete from "./components/auto-complete/auto-complete.jsx";
 import ToDoList from "./components/to-do-list/to-do-list.jsx";
+import StaleClosure from "./components/stale-closure/stale-closure.jsx";
+import ToDoListPractice from "./components/to-do-list/to-do-list-practice.jsx";
 
 function App() {
   const [fileData, setFileData] = useState(initialData);
+  const [count, setCount] = useState(0);
+
+//     useEffect(() => {
+//   setInterval(() => {
+//     // setCount(count + 1); // stale count
+//     setCount(c => c+1)
+//   }, 1000);
+// }, []);
+
+console.log(count, 'count')
 
   // React requires state updates to be immutable. This function creates a completely new object structure rather than mutating the existing one.
 
@@ -117,7 +129,10 @@ function App() {
       {/* <InfiniteScroll /> */}
       {/* <InfiniteScrollPractice /> */}
       {/* <AutoComplete /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      <ToDoListPractice />
+
+      <StaleClosure />
 
       {/* ReactMemo UseCase */}
       {/* <ReactMemoUseCase /> */}

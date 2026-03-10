@@ -32,15 +32,26 @@ const ToDoList = () => {
     }
 
     const handleCompletedList = (id) => {
-        const completedTodo = todoList.map(el => {
-            if (el.id === id) {
-                return {...el, isCompleted: !el.isCompleted}
-            }
-            return el
-        })
-        console.log(completedTodo, 'completedTodo')
-        setTodoList(completedTodo)
+    //     const completedTodo = todoList.map(item => {
+    //     if(item.id === id) {
 
+    //         //create a new object with all existing properties but set isCompleted to true
+    //         return {...item, isCompleted: true}
+    //     }
+        
+    //     // return the unchanged items
+    //     return item;
+    //    })
+    //     setTodoList(completedTodo)
+
+    //Better way
+    setTodoList(prevState => 
+        prevState.map(el => 
+            el.id === id ?
+            {...el, isCompleted: !el.isCompleted}
+            : el
+        )
+    )
     }
 
     console.log(todoList, 'list');
