@@ -56,8 +56,6 @@ const ToDoListPractice = () => {
         setTodoList(filteredTodo)
     }
 
-    console.log(todoList, 'todoList')
-
     return (
         <>
             <h3>To Do List</h3>

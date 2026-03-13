@@ -52,10 +52,7 @@ const ToDoList = () => {
             : el
         )
     )
-    }
-
-    console.log(todoList, 'list');
-    
+    }    
 
   return (
    <main className='main-section'>

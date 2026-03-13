@@ -11,6 +11,7 @@ import AutoComplete from "./components/auto-complete/auto-complete.jsx";
 import ToDoList from "./components/to-do-list/to-do-list.jsx";
 import StaleClosure from "./components/stale-closure/stale-closure.jsx";
 import ToDoListPractice from "./components/to-do-list/to-do-list-practice.jsx";
+import ProgressiveArrayDisplay from "./components/progressiveArrayDisplay/progressiveArrayDisplay.jsx";
 
 function App() {
   const [fileData, setFileData] = useState(initialData);
@@ -133,6 +134,8 @@ console.log(count, 'count')
       <ToDoListPractice />
 
       <StaleClosure />
+
+      <ProgressiveArrayDisplay />
 
       {/* ReactMemo UseCase */}
       {/* <ReactMemoUseCase /> */}
