@@ -12,6 +12,8 @@ import ToDoList from "./components/to-do-list/to-do-list.jsx";
 import StaleClosure from "./components/stale-closure/stale-closure.jsx";
 import ToDoListPractice from "./components/to-do-list/to-do-list-practice.jsx";
 import ProgressiveArrayDisplay from "./components/progressiveArrayDisplay/progressiveArrayDisplay.jsx";
+import TrafficeLightPractice from "./components/Traffic-Light-Practice.jsx";
+import ScrollDetector from "./components/scroll-detecotor.jsx";
 
 function App() {
   const [fileData, setFileData] = useState(initialData);
@@ -136,6 +138,10 @@ console.log(count, 'count')
       <StaleClosure />
 
       <ProgressiveArrayDisplay />
+
+      <TrafficeLightPractice />
+
+      <ScrollDetector />
 
       {/* ReactMemo UseCase */}
       {/* <ReactMemoUseCase /> */}
