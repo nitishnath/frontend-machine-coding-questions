@@ -7,7 +7,7 @@ const DebounceSearch = () => {
 
     const handleSearch = (value) => {
         //console.log(value, 'value')
-        setSearchData(value)
+        setSearchData(value.trim())
     }
 
     const handleDebounce = useDebounce(handleSearch, 1000)
