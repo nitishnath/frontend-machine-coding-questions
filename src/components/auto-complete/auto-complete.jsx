@@ -62,7 +62,7 @@ const AutoComplete = () => {
             if(timerRef.current) clearTimeout(timerRef.current)
         })
 
-    },[query])  
+    },[query, recipeList])  
     
   return (
     <main className='main-container'>
